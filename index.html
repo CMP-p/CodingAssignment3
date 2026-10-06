@@ -12,9 +12,9 @@
 
 
 
-  <body style="background-color: beige; font-family: cursive;" text="purple"> 
+  <body style="background-color:burlywood; font-family: cursive;"> <!--text="purple"--> 
 
-    <h1>Yum Yum Yum Yum Yum Sahur</h1>
+    <h1 style="color: #4d4271;">Yum Yum Yum Yum Yum Sahur</h1>
     <h2>Eggplant Paremsean</h2>
         <p>https://asimplepalate.com/blog/classic-eggplant-parmesan/#recipe</p>
         <p>Recipie by: Bethany Kramer, "A Simple Pallet"</p>
@@ -24,7 +24,7 @@
             <!--We were asked to not put any CSS, but this was the only way I could find to change figcap size
             and 250px seems way to large-->
         </figure>
-    
+        <!-- Ingredients list for recipie -->
         <h3>Ingredients List</h3>
             <ul>
                 <li>Eggplant</li>
@@ -44,20 +44,28 @@
                 <li>1-2 Tablespoons fresh basil chopped</li>
                 <li>1 teaspoon fresh oregano chopped</li>
             </ul>
-       
+        <!-- New Form, will be edited with JS later -->
         <h3>Conversion</h3>
-        <input type="text" placeholder="Tablespoons" id="tblspn" name ="tblspn">
-        =
-        <input type="text" placeholder="Cups" id="cups" name="cups">
-            <!-- Still need to validate and fix duplicates -->
+        <form class="conversion">
+            <input type="text" placeholder="Tablespoons" id="tblspn" name ="Conversion">
+            <input type="text" placeholder="Cups" id="cups" name="Conversion">
+        </form>
+        <p>&nbsp;</p>
+
+
+        <!-- Rating feature -->
         <h3 class="rate">Rate This Recipe</h3>
+        <form>
             <fieldset style="width: 3000px;">
             <legend>What skill level is the recipe?</legend>
-                <input type="radio" id="easy" name="difficulty"> Easy
-                <input type="radio" id="med" name="difficulty">Intermediate
-                <input type="radio"id="hard" name="difficulty"> Hard
+                <input type="radio" id="easy" name="difficulty">
+                <label for="easy">Easy</label>
+                <input type="radio" id="med" name="difficulty">
+                <label for="med">Intermediate</label>
+                <input type="radio" id="hard" name="difficulty">
+                <label for="hard">Hard</label>
             </fieldset>
-            <p>&nbsp;</p>
+        </form>
         <!-- <h3>Equipment</h3>
             <ul>
                 <li>1 Oven or Stove Top</li>
