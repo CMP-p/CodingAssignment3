@@ -13,11 +13,24 @@ Quill Gray
 
 Irish Coffee
 #543623
+
+css breaks after blank selectors. comment out empty selectors to test css. it wont work again until it see's another closing selector
 */
+
+/* *{
+    border: solid skyblue 2px;
+    margin: 12px;
+    color: #321;
+} */
 
 body {
     background-image: url(../images/kitchen-bg.jpg);
-    background: cover, no-repeat;
+    background: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0px;
+
 }
 
 h1 {
@@ -37,26 +50,47 @@ h2 {
     text-align: center;
 }
 
-h3
+/* h3 */
 
-p
+p {
+    background-color: #aaa9;
+    border-radius: 0.2em;
+}
 
-.right-align {
+p.right-align {
     text-align: right;
     border: solid black;
+    padding: 10px;
 }
 
-figure 
+figure {
+    text-align: center;
+    border-color: black;
+    }
 
 img {
-    align-content: center;
+    text-align: center;
+    padding: 1rem;
+    background-color: #ddd9;
+    border-radius: 0.3em;
 }
 
-figcaption
+figcaption {
+    background-color: #3219;
+    border-radius: 0.5em;
+    color: #ddd;
+}
 
-ul 
+ul {
+    background-color: #321b;
+    border-radius: 1em;
+    max-width: 50em;
+    text-align: center;
+}
 
-li
+li {
+    color: #ddd
+}
 
 form 
 
@@ -66,9 +100,9 @@ fieldset
 
 legend
 
-hr{
+/* hr{
     color : black;
-}
+} */
 
 /*  div {
 
