@@ -1,0 +1,77 @@
+/*
+Include atleast one manipulation per element
+https://fonts.google.com/ for fonts
+
+Arrowtown
+#9a866e
+
+Birch
+#31281d
+
+Quill Gray
+#d4d4d2
+
+Irish Coffee
+#543623
+*/
+
+body {
+    background-image: url(../images/kitchen-bg.jpg);
+    background: cover, no-repeat;
+}
+
+h1 {
+    background-color: #00000022;
+    color: #326;
+    border: solid black;
+    border-radius: 10px;
+    text-align: center;
+    font-family: cursive;
+}
+
+h2 {
+    font-size: 30px;
+    border: solid black 1px;
+    border-top: 0000;
+    border-radius: 10px;
+    text-align: center;
+}
+
+h3
+
+p
+
+.right-align {
+    text-align: right;
+    border: solid black;
+}
+
+figure 
+
+img {
+    align-content: center;
+}
+
+figcaption
+
+ul 
+
+li
+
+form 
+
+input
+
+fieldset
+
+legend
+
+hr{
+    color : black;
+}
+
+/*  div {
+
+ border: double cornflowerblue;
+
+} */
