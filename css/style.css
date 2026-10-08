@@ -191,3 +191,24 @@ a.footer-links {
     text-decoration: none;
     color: #123a;
 }
+
+/* Second part of the assingment */
+
+div {
+    /* border: double cornflowerblue; */
+    border: solid skyblue 2px;
+    margin: 10px;
+    animation: flashing 5s linear infinite;
+}
+
+.wrapper {
+
+  display: flex;
+
+}
+
+.wrapper div {
+
+  flex: 1;
+
+}
