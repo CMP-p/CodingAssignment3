@@ -1,6 +1,7 @@
 /*
 Include atleast one manipulation per element
-https://fonts.google.com/ for fonts
+https://fonts.google.com/ ###for fonts
+canva.com/colors/color-palette-generator ###Personally reccomended
 
 Arrowtown
 #9a866e or #986
@@ -17,7 +18,7 @@ Irish Coffee
 css breaks after blank selectors. comment out empty selectors to test css. it wont work again until it see's another closing selector
 */
 
-@keyframes flashing {
+@keyframes flashing { /* This exists so I can check element boxes */
     from {
         border: solid skyblue 2px;
     }
@@ -31,12 +32,12 @@ css breaks after blank selectors. comment out empty selectors to test css. it wo
         border: solid skyblue 2px;
     }
 }
-/* 
+
 * {
-    border: solid skyblue 2px;
-    margin: 12px;
-    animation: flashing 5s linear infinite;
-    } */
+    /* border: solid skyblue 2px; */
+    margin: 10px;
+    /* animation: flashing 5s linear infinite; */
+    }
 
 
 body {
