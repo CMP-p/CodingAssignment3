@@ -3,25 +3,41 @@ Include atleast one manipulation per element
 https://fonts.google.com/ for fonts
 
 Arrowtown
-#9a866e
+#9a866e or #986
 
 Birch
-#31281d
+#31281d or #321
 
 Quill Gray
-#d4d4d2
+#d4d4d2 or #ddd
 
 Irish Coffee
-#543623
+#543623 or #532
 
 css breaks after blank selectors. comment out empty selectors to test css. it wont work again until it see's another closing selector
 */
 
-/* *{
+@keyframes flashing {
+    from {
+        border: solid skyblue 2px;
+    }
+    50% {
+        border: solid #0000 2px;
+    }
+    75% {
+        border: solid #0000 2px;
+    }
+    to {
+        border: solid skyblue 2px;
+    }
+}
+/* 
+* {
     border: solid skyblue 2px;
     margin: 12px;
-    color: #321;
-} */
+    animation: flashing 5s linear infinite;
+    } */
+
 
 body {
     background-image: url(../images/kitchen-bg.jpg);
@@ -33,52 +49,89 @@ body {
 
 }
 
+h1, h2, h3 {
+    text-decoration: underline;
+    padding: 4px;
+}
+
 h1 {
-    background-color: #00000022;
-    color: #326;
+    background-color: #fff7;
+    color: #321;
     border: solid black;
     border-radius: 10px;
     text-align: center;
     font-family: cursive;
+    margin: 10px;
 }
 
 h2 {
     font-size: 30px;
     border: solid black 1px;
-    border-top: 0000;
+    border-top: 0;
     border-radius: 10px;
+    text-align: center;
+    text-wrap: pretty;
+    margin: 10px;
+}
+
+h3 {
+    background: #ddda;
+    color: #321;
+    border-radius: 5px;
     text-align: center;
 }
 
-/* h3 */
-
 p {
-    background-color: #aaa9;
+    background-color: #ddd9;
     border-radius: 0.2em;
+    margin: 10px;
+    text-align: center;
+}
+
+.empty { /*emptyparagraph*/
+    background-color: #0000;
+    color: #0000;
 }
 
 p.right-align {
     text-align: right;
-    border: solid black;
-    padding: 10px;
+    border: solid #0007 1px;
+    margin: 10px;;
+}
+
+.footer {
+    background-color: #fffb;
+    color: #321;
+}
+
+.link-credit {
+    margin: auto;
+    font-size: 0.5em;
+    max-width: 250px;
+    background-color: #0002;
 }
 
 figure {
     text-align: center;
-    border-color: black;
+    border: solid black 0.2em;
+    border-radius: 0.3rem;
     }
 
 img {
-    text-align: center;
-    padding: 1rem;
-    background-color: #ddd9;
+    padding: 1em;
+    background-color: #000a;
     border-radius: 0.3em;
+    width: 250px;
 }
 
 figcaption {
     background-color: #3219;
     border-radius: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
     color: #ddd;
+    max-width: 250px;
+    margin: auto;
 }
 
 ul {
@@ -89,23 +142,51 @@ ul {
 }
 
 li {
-    color: #ddd
+    color: #ddd;
+    margin: 10px;
+}
+/* form items */
+
+fieldset{
+    border: solid #3219 2px;
+    background-color: #0002;
+    border-radius: 0.2em;
 }
 
-form 
+form {
+    border: solid #3212 2px;
+    border-radius: 0.3rem;
+    color: #421;
+    background-color: #986a;
+    }
 
-input
+input{
+    background-color: #986b;
+}
 
-fieldset
+::placeholder {
+    color: #000;
+}
 
-legend
 
-/* hr{
-    color : black;
-} */
+legend {
+    border-radius: 0.3em;
+    border: solid #421 2px;
+    border-top: 0px;
+}
 
-/*  div {
+hr { /*hr values are depricated*/
+    border: none;
+    height: 1px;
+    background-color: #000;
+}
 
- border: double cornflowerblue;
+a {
+    text-decoration: none;
+    color: #cdfa;
+}
 
-} */
+a.footer-links {
+    text-decoration: none;
+    color: #123a;
+}
