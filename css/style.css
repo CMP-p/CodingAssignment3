@@ -194,13 +194,22 @@ a.footer-links {
 
 /* Second part of the assingment */
 
-div {
-    /* border: double cornflowerblue; */
-    border: solid skyblue 2px;
-    margin: 10px;
-    animation: flashing 5s linear infinite;
+#bottom {
+    text-align: left;
 }
 
+div, footer {
+    /* border: double cornflowerblue; */
+    border: solid skyblue 2px;
+    /* margin: 10px; */
+    animation: flashing 5s linear infinite;
+}
+/* algn so that back to main page is on the left, and everything else is on the right */
+footer {
+    display: grid;
+}
+/* Cross recipe by: and attribute over rating table. Connect fig-cap to img */
+/* split conversion and rating 50/50 */
 .wrapper {
 
   display: flex;
