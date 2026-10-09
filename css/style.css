@@ -87,6 +87,7 @@ p {
     border-radius: 0.2em;
     margin: 10px;
     text-align: center;
+    
 }
 
 .empty { /*emptyparagraph*/
@@ -96,13 +97,7 @@ p {
 
 p.right-align {
     text-align: right;
-    border: solid #0007 1px;
     margin: 10px;;
-}
-
-.footer {
-    background-color: #fffb;
-    color: #321;
 }
 
 .link-credit {
@@ -187,14 +182,10 @@ a {
     color: #cdfa;
 }
 
-a.footer-links {
-    text-decoration: none;
-    color: #123a;
-}
 
 /* Second part of the assingment */
 
-#bottom {
+p.align-left {
     text-align: left;
 }
 
@@ -204,9 +195,23 @@ div, footer {
     /* margin: 10px; */
     animation: flashing 5s linear infinite;
 }
+
 /* algn so that back to main page is on the left, and everything else is on the right */
 footer {
     display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 35px;
+    font-size: 10px;
+    text-align: center;
+}
+footer p {
+    background-color: #fffb;
+    border: solid #0007 1px;
+    color: #321;
+}
+footer a {
+    text-decoration: none;
+    color: #123a;
 }
 /* Cross recipe by: and attribute over rating table. Connect fig-cap to img */
 /* split conversion and rating 50/50 */
@@ -216,8 +221,15 @@ footer {
 
 }
 
-.wrapper div {
+/* .wrapper div {
 
   flex: 1;
+
+} */
+
+#testdiv1 {
+    display: grid;
+    grid-template-columns: 400px;
+    grid-template-rows: 150px 150px;
 
 }
