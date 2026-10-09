@@ -3,6 +3,8 @@ Include atleast one manipulation per element
 https://fonts.google.com/ ###for fonts
 canva.com/colors/color-palette-generator ###Personally reccomended
 
+Color Pallete
+
 Arrowtown
 #9a866e or #986
 
@@ -15,7 +17,6 @@ Quill Gray
 Irish Coffee
 #543623 or #532
 
-css breaks after blank selectors. comment out empty selectors to test css. it wont work again until it see's another closing selector
 */
 
 @keyframes flashing { /* This exists so I can check element boxes */
@@ -32,12 +33,12 @@ css breaks after blank selectors. comment out empty selectors to test css. it wo
         border: solid skyblue 2px;
     }
 }
-
-* {
-    /* border: solid skyblue 2px; */
+/* Debugging selector */
+/* * {
+    border: solid skyblue 2px;
     margin: 10px;
-    /* animation: flashing 5s linear infinite; */
-    }
+    animation: flashing 5s linear infinite;
+    } */
 
 
 body {
@@ -51,17 +52,16 @@ body {
 }
 
 h1, h2, h3 {
-    text-decoration: underline;
     padding: 4px;
 }
 
 h1 {
     background-color: #fff7;
     color: #321;
-    border: solid black;
-    border-radius: 10px;
+    border-top: solid black 1px;
+    border-radius: 20px 20px 100% 100%;
     text-align: center;
-    font-family: cursive;
+    font-family: cursive, sans-serif;
     margin: 10px;
 }
 
@@ -70,7 +70,8 @@ h2 {
     border: solid black 1px;
     border-top: 0;
     border-radius: 10px;
-    text-align: center;
+    text-align: left;
+    max-width: 300px;
     text-wrap: pretty;
     margin: 10px;
 }
@@ -80,9 +81,12 @@ h3 {
     color: #321;
     border-radius: 5px;
     text-align: center;
+    max-height: fit-content;
+    margin: 10px;
+    /* flex: 1 auto; */
 }
 
-p {
+header p {
     background-color: #ddd9;
     border-radius: 0.2em;
     margin: 10px;
@@ -97,26 +101,24 @@ p {
 
 p.right-align {
     text-align: right;
-    margin: 10px;;
 }
 
-.link-credit {
-    margin: auto;
+p.link-credit {
     font-size: 0.5em;
     max-width: 250px;
-    background-color: #0002;
+    background-color: #9863;
 }
 
 figure {
     text-align: center;
-    border: solid black 0.2em;
+    background-color: #986a;
     border-radius: 0.3rem;
+    padding: 1em;
     }
 
 img {
-    padding: 1em;
-    background-color: #000a;
-    border-radius: 0.3em;
+    background-color: #000;
+    border-radius: 1em;
     width: 250px;
 }
 
@@ -133,16 +135,17 @@ figcaption {
 ul {
     background-color: #321b;
     border-radius: 1em;
-    max-width: 50em;
+    margin: 10x;
     text-align: center;
+    flex-grow: 1;
 }
 
 li {
     color: #ddd;
     margin: 10px;
 }
-/* form items */
 
+/* form items */
 fieldset{
     border: solid #3219 2px;
     background-color: #0002;
@@ -189,25 +192,35 @@ p.align-left {
     text-align: left;
 }
 
-div, footer {
+
+/* div, footer {
     /* border: double cornflowerblue; */
-    border: solid skyblue 2px;
-    /* margin: 10px; */
+    /* border: solid skyblue 2px; */
     animation: flashing 5s linear infinite;
-}
+} */
 
 /* algn so that back to main page is on the left, and everything else is on the right */
 footer {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: 35px;
+    /* display: grid; */
+    /* grid-template-columns: auto auto auto; */
+    /* grid-template-rows: 35px; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     font-size: 10px;
     text-align: center;
 }
+/* later I want to find out how to get the boxes to shift when they don't fit in the screen */
 footer p {
     background-color: #fffb;
     border: solid #0007 1px;
+    border-radius: 2px;
     color: #321;
+    margin: 10px;
+    padding: 1px 15px;
+    max-width: 50%;
+
+    flex: 1 auto;
 }
 footer a {
     text-decoration: none;
@@ -215,21 +228,46 @@ footer a {
 }
 /* Cross recipe by: and attribute over rating table. Connect fig-cap to img */
 /* split conversion and rating 50/50 */
-.wrapper {
 
-  display: flex;
+
+div.wrapper {
+    /* border: solid #f00 3px !important; */
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+}
+
+.box1 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.box2 {
+    /* display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto; */
+    }
+.box3 {
+    display: flex;
+    flex-flow: column wrap;    
+}
+.box4 {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.wrapper > div {
+
+  flex: 1;
+  margin: 0px 10px;
 
 }
 
-/* .wrapper div {
 
-  flex: 1;
 
-} */
-
-#testdiv1 {
+/* #testdiv1 {
     display: grid;
     grid-template-columns: 400px;
     grid-template-rows: 150px 150px;
 
-}
+} */
