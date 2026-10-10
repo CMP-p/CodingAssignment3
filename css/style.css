@@ -135,14 +135,14 @@ figcaption {
 ul {
     background-color: #321b;
     border-radius: 1em;
-    margin: 10x;
+    min-height: stretch;
     text-align: center;
-    flex-grow: 1;
+    /* margin: 10x; */
 }
 
 li {
     color: #ddd;
-    margin: 10px;
+    margin: 15px;
 }
 
 /* form items */
@@ -193,13 +193,13 @@ p.align-left {
 }
 
 
-/* div, footer {
-    /* border: double cornflowerblue; */
-    /* border: solid skyblue 2px; */
+/*div, footer {
+    /* border: double cornflowerblue; 
+    /* border: solid skyblue 2px; 
     animation: flashing 5s linear infinite;
 } */
 
-/* algn so that back to main page is on the left, and everything else is on the right */
+
 footer {
     /* display: grid; */
     /* grid-template-columns: auto auto auto; */
@@ -210,7 +210,7 @@ footer {
     font-size: 10px;
     text-align: center;
 }
-/* later I want to find out how to get the boxes to shift when they don't fit in the screen */
+
 footer p {
     background-color: #fffb;
     border: solid #0007 1px;
@@ -227,15 +227,21 @@ footer a {
     color: #123a;
 }
 /* Cross recipe by: and attribute over rating table. Connect fig-cap to img */
+
 /* split conversion and rating 50/50 */
 
-
-div.wrapper {
-    /* border: solid #f00 3px !important; */
+div.wrapper1 {
+    /* border: solid #f00 3px;  */
+    display: flex;
+    flex-flow: row;
+ }
+div.wrapper2 {
+    /* border: solid #f00 3px;  */
     display: flex;
     flex-flow: row wrap;
-    align-items: stretch;
-}
+ }
+ 
+
 
 .box1 {
     display: flex;
@@ -243,25 +249,28 @@ div.wrapper {
     justify-content: center;
 }
 .box2 {
-    /* display: grid;
+    display: grid;
     grid-template-columns: auto auto;
-    grid-template-rows: auto auto; */
-    }
+    grid-template-rows: auto auto;
+}
 .box3 {
+    margin: 10px;
+    min-width: 400px;
+    background-color: #ddd5;
+
+    flex: 1;
     display: flex;
-    flex-flow: column wrap;    
+    flex-flow: column;    
 }
 .box4 {
+    margin: 10px;
+    min-width: 400px;
+    flex: 1;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column;
 }
 
-.wrapper > div {
 
-  /* flex: 1; */
-  margin: 0px 10px;
-
-}
 
 
 
