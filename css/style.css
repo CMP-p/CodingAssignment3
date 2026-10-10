@@ -81,7 +81,6 @@ h3 {
     color: #321;
     border-radius: 5px;
     text-align: center;
-    max-height: fit-content;
     margin: 10px;
     /* flex: 1 auto; */
 }
@@ -110,10 +109,15 @@ p.link-credit {
 }
 
 figure {
-    text-align: center;
     background-color: #986a;
     border-radius: 0.3rem;
     padding: 1em;
+    max-width: 550px;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    /* border: solid #f59 3px; */
     }
 
 img {
@@ -125,8 +129,6 @@ img {
 figcaption {
     background-color: #3219;
     border-radius: 0.5em;
-    padding-left: 1em;
-    padding-right: 1em;
     color: #ddd;
     max-width: 250px;
     margin: auto;
@@ -135,9 +137,9 @@ figcaption {
 ul {
     background-color: #321b;
     border-radius: 1em;
-    min-height: stretch;
     text-align: center;
-    /* margin: 10x; */
+    margin-bottom: 10px; 
+    flex-grow: 1;
 }
 
 li {
@@ -157,6 +159,8 @@ form {
     border-radius: 0.3rem;
     color: #421;
     background-color: #986a;
+
+    flex: 1;
     }
 
 input{
@@ -176,7 +180,7 @@ legend {
 
 hr { /*hr values are depricated*/
     border: none;
-    height: 1px;
+    height: 2px;
     background-color: #000;
 }
 
@@ -233,30 +237,47 @@ footer a {
 div.wrapper1 {
     /* border: solid #f00 3px;  */
     display: flex;
-    flex-flow: row;
+    flex-flow: row wrap;
+    justify-content: center;
+
+    /* border: solid #f00 1px;    */
+    margin: 2px;  
  }
+
+ /* Split wrappers for granularity */
 div.wrapper2 {
     /* border: solid #f00 3px;  */
     display: flex;
     flex-flow: row wrap;
+    background-color: #ddd5;
+    margin-top: 10px;    
  }
  
 
 
 .box1 {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+
+    flex: 1;
+
+    /* border: solid #b0b 1px; */
 }
 .box2 {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
+    min-width: 300px;
+
+    flex: 1;
+ 
+    display: flex;
+    flex-flow: column wrap;
+
+    /* border: solid #fa1 1px; */
 }
 .box3 {
     margin: 10px;
     min-width: 400px;
-    background-color: #ddd5;
+    /* border: solid #f00 1px;  */
 
     flex: 1;
     display: flex;
@@ -265,6 +286,8 @@ div.wrapper2 {
 .box4 {
     margin: 10px;
     min-width: 400px;
+    /* border: solid #f00 1px;  */
+
     flex: 1;
     display: flex;
     flex-flow: column;
