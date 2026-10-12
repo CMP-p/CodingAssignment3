@@ -6,16 +6,16 @@ canva.com/colors/color-palette-generator ###Personally reccomended
 Color Pallete
 
 Arrowtown
-#9a866e or #986
+#9a866e or #986 or rgb(154, 134, 110)
 
 Birch
-#31281d or #321
+#31281d or #321 or rgb(049, 040, 029)
 
 Quill Gray
-#d4d4d2 or #ddd
+#d4d4d2 or #ddd or rgb(212, 212, 210)
 
 Irish Coffee
-#543623 or #532
+#543623 or #532 or rgb(084, 054, 035)
 
 */
 
@@ -104,6 +104,10 @@ p.right-align {
     text-align: right;
 }
 
+p.align-left {
+    text-align: left;
+}
+
 p.link-credit {
     font-size: 0.5em;
     max-width: 250px;
@@ -136,6 +140,11 @@ figcaption {
     margin: auto;
 }
 
+a {
+    text-decoration: none;
+    color: #cdfa;
+}
+
 ul {
     background-color: #321b;
     border-radius: 1em;
@@ -150,12 +159,6 @@ li {
 }
 
 /* form items */
-fieldset{
-    border: solid #3219 2px;
-    background-color: #0002;
-    border-radius: 0.2em;
-}
-
 form {
     border: solid #3212 2px;
     border-radius: 0.3rem;
@@ -163,7 +166,13 @@ form {
     background-color: #986a;
 
     flex: 1;
-    }
+}
+
+fieldset{
+    border: solid #3219 2px;
+    background-color: #0002;
+    border-radius: 0.2em;
+}
 
 input{
     background-color: #986b;
@@ -186,17 +195,8 @@ hr { /*hr values are depricated*/
     background-color: #000;
 }
 
-a {
-    text-decoration: none;
-    color: #cdfa;
-}
-
 
 /* Second part of the assingment */
-
-p.align-left {
-    text-align: left;
-}
 
 
 /*div, footer {
